@@ -16,6 +16,25 @@ php artisan make:model modalName
 ```
 --------------------------------------------------------------------------
 
+## Artisan Make: Controller
+
+```
+php artisan make:controller CityController
+```
+
+Si besoin des recourses 
+
+```
+php artisan make:controller CityController -r
+```
+--------------------------------------------------------------------------
+
+### Creation en une commande de migration & controller avec resouces
+
+```
+php artisan make:controller CityController -mcr
+```
+
 ## Artisan Make: pour DB
 
 ### creation d'un fichier migration pour créer une table dans le base de données
