@@ -40,7 +40,7 @@ S'il faut la recréer suite à un changement dans une des fichier migration
 ```
 php artisan migrate:fresh
 ```
-
+Sinon 
 ```
 php artisan migrate  
 ```
