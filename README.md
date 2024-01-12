@@ -34,6 +34,13 @@ public function up(): void
 ```
 
 #### Creation de la Base de Données
+
+si il faut la recréer
+
+```
+php artisan migrate:fresh
+```
+
 ```
 php artisan migrate  
 ```
