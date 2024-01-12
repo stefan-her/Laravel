@@ -14,8 +14,16 @@ composer require barryvdh/laravel-debugbar --dev
 ```
 php artisan make:migration dbtable
 ```
+SoftDelete -> supperion d'un élément via l'ajout une date et donc reversible
+dans le fichier migration créé:  
 
-
+```
+public function up(): void
+    {
+        Schema::create('films', function (Blueprint $table) {
+          ....
+          $table->softDeletes();
+```
 
 
 ## contrôle que le formulaire n'est pas remplit par un robot
