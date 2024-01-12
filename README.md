@@ -35,7 +35,7 @@ public function up(): void
 
 #### Creation de la Base de Données
 
-si il faut la recréer
+S'il faut la recréer suite à un changement dans une des fichier migration
 
 ```
 php artisan migrate:fresh
