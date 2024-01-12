@@ -7,8 +7,16 @@ Cours Larvavel 10
 composer require barryvdh/laravel-debugbar --dev
 ```
 
+--------------------------------------------------------------------------
 
-## Artisan Make:
+## Artisan Make: Model
+
+```
+php artisan make:model modalName
+```
+--------------------------------------------------------------------------
+
+## Artisan Make: pour DB
 
 ### creation d'un fichier migration pour créer une table dans le base de données
 ```
@@ -20,7 +28,7 @@ dans le fichier migration créé:
 ```
 public function up(): void
     {
-        Schema::create('films', function (Blueprint $table) {
+        Schema::create('DBtable', function (Blueprint $table) {
           ....
           $table->softDeletes();
 ```
@@ -29,8 +37,23 @@ public function up(): void
 
 #### creation de factory
 ```
-php artisan make:factory CitiesFactories
+php artisan make:factory DBTableFactories
 ```
+
+#### creation du seeder basé sur son Model
+```
+php artisan make:seeder DBtableSeeder 
+```
+
+#### Pour remplir la DB
+```
+php artisan db:seed
+```
+ou si besoin juste de remplir une table en utilisant son model
+```
+php artisan db:seed --class=DBtableSeeder
+```
+--------------------------------------------------------------------------
 
 ## contrôle que le formulaire n'est pas remplit par un robot
 ```
