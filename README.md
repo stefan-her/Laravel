@@ -7,6 +7,17 @@ Cours Larvavel 10
 composer require barryvdh/laravel-debugbar --dev
 ```
 
+
+## Artisan Make:
+
+### creation d'un fichier migration pour créer une table dans le base de données
+```
+php artisan make:migration cities
+```
+
+
+
+
 ## contrôle que le formulaire n'est pas remplit par un robot
 ```
 composer require spatie/laravel-honeypot
@@ -25,4 +36,6 @@ dans le fichier app/Http/Kernel.php
       \Spatie\Honeypot\ProtectAgainSpam::class
   }
 ```
+
+
 
