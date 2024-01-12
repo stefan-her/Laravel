@@ -29,6 +29,24 @@ php artisan make:controller CityController -r
 ```
 --------------------------------------------------------------------------
 
+# Route
+
+Creation des routes en une seul fois lié à un controller 
+
+- index
+- create
+- store
+- show
+- edit
+- update
+- destroy
+
+```
+Route::resource('cities', CityController::class)->except(["show"]);
+```
+
+--------------------------------------------------------------------------
+
 ### Creation en une commande de migration & controller avec resouces
 
 ```
