@@ -33,6 +33,10 @@ public function up(): void
           $table->softDeletes();
 ```
 
+#### Creation de la Base de Données
+```
+php artisan migrate  
+```
 ### Pour remplire la DB avec des fauses données
 
 #### creation de factory
