@@ -25,6 +25,12 @@ public function up(): void
           $table->softDeletes();
 ```
 
+### Pour remplire la DB avec des fauses données
+
+#### creation de factory
+```
+php artisan make:factory CitiesFactories
+```
 
 ## contrôle que le formulaire n'est pas remplit par un robot
 ```
