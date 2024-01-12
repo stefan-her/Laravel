@@ -37,7 +37,7 @@ public function up(): void
 ```
 php artisan migrate  
 ```
-### Pour remplire la DB avec des fauses données
+### Pour remplire la DB avec des fausses données
 
 #### creation de factory
 ```
