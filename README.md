@@ -42,7 +42,13 @@ Creation des routes en une seul fois lié à un controller
 - destroy
 
 ```
-Route::resource('cities', CityController::class)->except(["show"]);
+Route::resource('routeName', NameController::class);
+```
+
+Pour exclute des méthodes
+
+```
+Route::resource('routeName', NameController::class)->except(["show"]);
 ```
 
 --------------------------------------------------------------------------
