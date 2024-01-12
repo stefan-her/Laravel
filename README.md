@@ -12,7 +12,7 @@ composer require barryvdh/laravel-debugbar --dev
 
 ### creation d'un fichier migration pour créer une table dans le base de données
 ```
-php artisan make:migration cities
+php artisan make:migration dbtable
 ```
 
 
