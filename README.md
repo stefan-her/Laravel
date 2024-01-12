@@ -13,7 +13,7 @@ composer require spatie/laravel-honeypot
 php artisan vendor:publish --provider="Spatie\Honeypot\HoneypotServiceProvider"
 ```
 
-dans le formulaire 
+dans le recources/views/formulaire.blade.php
 ```
 <x-honeypot />
 ```
