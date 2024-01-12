@@ -10,7 +10,7 @@ composer require spatie/laravel-honeypot
 php artisan vendor:publish --provider="Spatie\Honeypot\HoneypotServiceProvider"
 
 dans le formulaire 
-  <x-honeypot />
+  \<x-honeypot /\>
 
 dans le fichier app/Http/Kernel.php
   proteced $middelware {
